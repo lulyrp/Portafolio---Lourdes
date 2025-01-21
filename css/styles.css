@@ -444,3 +444,105 @@ footer .social-icons a.linkedin {
         grid-template-columns: 1fr; 
     }
 }
+/* Media Queries */
+
+/* Para pantallas grandes (desktops y laptops) */
+@media (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+/* Para tablets (pantallas entre 768px y 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-grid, .project-grid, .hobby-grid, .formacion-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Para dispositivos móviles (pantallas entre 480px y 767px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn, .cv-btn {
+        padding: 8px 15px;
+    }
+}
+
+/* Para dispositivos muy pequeños (pantallas menores a 480px) */
+@media (max-width: 479px) {
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn, .cv-btn {
+        padding: 7px 12px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+}
