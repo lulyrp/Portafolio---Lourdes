@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Charming+Scripter&display=swap');
+
+/* General Styles */ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #080101; /* Fondo oscuro para toda la página */
+    color: #f4f4f4; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Charming Scripter', cursive;
+    color: #d1c8b1;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7), 0px 1px 3px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    font-size: 2.5rem; 
+    transition: all 0.3s ease;
+    text-align: center; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333333; 
+    color: #d1c8b1; 
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d1c8b1; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #d1c8b1; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    padding: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background-color: #d1c8b1; 
+    color: #333333; 
+    transform: translateY(-2px); 
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: #333333; 
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.about p {
+    color: #B0B0B0; 
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Perfil Imagen */
+.profile-img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 250px;
+    border: 4px solid #d1c8b1; /* Borde suave */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 0;
+    background-color: #1e1e1e; /* Fondo oscuro */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-card {
+    padding: 25px;
+    background-color: #2a2a2a;
+    border: 2px solid #d1c8b1;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px rgba(170, 211, 23, 0.5);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #d1c8b1; 
+    margin-top: 10px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;
+    background-color: #333333; 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #2a2a2a;
+    padding: 25px;
+    border: 2px solid #d1c8b1;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(161, 146, 146, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px rgba(170, 211, 23, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #d1c8b1; 
+}
+
+.project-card .github-btn {
+    background-color: #d1c8b1;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease; transform: 0.3s ease, color 0.3 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.project-card .github-btn:focus {
+    outline: none;
+    border: 2px solid #d1c8b1;
+}
+
+/* Hobbies Section */
+.hobbies {
+    padding: 80px 0;
+    background-color: #1e1e1e;
+    border: 2px solid #d1c8b1;
+    border-radius: 10px;
+    padding-bottom: 120px; 
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.hobby-card {
+    padding: 50px;
+    background-color: #2a2a2a;
+    border: 2px solid #d1c8b1;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(8, 8, 8, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 230px;
+    text-align: center;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 30px rgba(170, 211, 23, 0.5);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hobby-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #d1c8b1; 
+}
+
+.hobby-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: #333333;
+    color: #d1c8b1; 
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #d1c8b1; 
+}
+
+.contact button {
+    background-color: #d1c8b1;
+    color: #333333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #333333;
+    color: #d1c8b1;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #d1c8b1; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e3d4f3; 
+    transition: transform 0.3s ease;
+
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1); 
+}
+
+footer .social-icons img {
+    width: 20px; 
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Iconos de GitHub y LinkedIn */
+footer .social-icons a.github {
+    background-color: #333333;
+}
+
+footer .social-icons a.linkedin {
+    background-color: #0077b5;
+}
+
+/* Descargar CV Button */
+.cv-btn {
+    background-color: #252326; 
+    border: 4px solid #fff; 
+    color: #fff;
+    font-family: 'Charming Scripter', cursive; 
+    padding: 10px 20px;
+    border-radius: 30px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.cv-btn:hover {
+    background-color: #0C1111; 
+    transform: scale(1.05); 
+}
+
+.cv-btn:focus {
+    outline: none;
+}
+
+/* Otros estilos existentes en tu archivo CSS */
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Estilo para la sección de Formación */
+#formaciones {
+    background-color: #393939; 
+    padding: 50px 0;
+}
+
+#formaciones .container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#formaciones h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Charming Scripter', cursive;
+    color: #d1c8b1;
+}
+
+.formacion-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+}
+
+.formacion-card {
+    background-color: #252326;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formacion-card img {
+    width: 100%;
+    height: 120px; 
+    object-fit: cover;
+    border-bottom: 3px solid #393939;
+}
+
+.formacion-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-family: 'Charming Scripter', cursive;
+    color: #d1c8b1; /* Onyx color */
+}
+
+.formacion-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 20px;
+}
+
+.formacion-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(170, 211, 23, 0.5); 
+}
+
+@media (max-width: 768px) {
+    .formacion-grid {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .formacion-grid {
+        grid-template-columns: 1fr; 
+    }
+}
