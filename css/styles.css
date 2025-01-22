@@ -258,8 +258,9 @@ h1, h2, h3 {
 }
 
 .contact form {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
     text-align: left;
 }
 
@@ -307,7 +308,7 @@ footer .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    margin-top: wrap;
 }
 
 footer .social-icons a {
@@ -379,13 +380,13 @@ footer .social-icons a.linkedin {
     padding: 50px 0;
 }
 
-#formaciones .container {
+#formation.container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-#formaciones h2 {
+#formation h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -393,13 +394,13 @@ footer .social-icons a.linkedin {
     color: #d1c8b1;
 }
 
-.formacion-grid {
+.formation-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 30px;
 }
 
-.formacion-card {
+.formation-card {
     background-color: #252326;
     border-radius: 10px;
     overflow: hidden;
@@ -408,46 +409,45 @@ footer .social-icons a.linkedin {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.formacion-card img {
+.formation-card img {
     width: 100%;
     height: 120px; 
     object-fit: cover;
     border-bottom: 3px solid #393939;
 }
 
-.formacion-card h3 {
+.formation-card h3 {
     font-size: 1.5rem;
     margin: 20px 0;
     font-family: 'Charming Scripter', cursive;
     color: #d1c8b1; /* Onyx color */
 }
 
-.formacion-card p {
+.formation-card p {
     font-size: 1rem;
     color: #555;
     padding: 0 15px 20px;
 }
 
-.formacion-card:hover {
+.formation-card:hover {
     transform: translateY(-10px); 
     box-shadow: 0 6px 15px rgba(170, 211, 23, 0.5); 
 }
 
 @media (max-width: 768px) {
-    .formacion-grid {
+    .formation-grid {
         grid-template-columns: 1fr 1fr; 
     }
 }
 
 @media (max-width: 480px) {
-    .formacion-grid {
+    .formation-grid {
         grid-template-columns: 1fr; 
     }
 }
 @media screen and (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas, como móviles */
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
     .menu {
         display: block;
