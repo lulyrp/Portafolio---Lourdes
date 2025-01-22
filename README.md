@@ -18,5 +18,15 @@ Un portafolio bien construido es tu carta de presentación en el ámbito profesi
 - **Formación académica y experiencia profesional:** Esta es la sección donde incluirás tu educación y tu trayectoria laboral.
 - **Formulario de contacto:** Al final, podrás añadir un formulario donde los reclutadores podrán ponerse en contacto contigo.
 
+![Portafolio)](https://github.com/user-attachments/assets/5a87e835-061c-4b0d-986e-03ab5e836569)
 
+![Secciones](https://github.com/user-attachments/assets/5b756288-d979-45d3-9acb-d90fad1f677e)
+
+![Secciones](https://github.com/user-attachments/assets/1a579fc5-4b13-4ef6-96ac-a1590cffc85c)
+
+![Secciones](https://github.com/user-attachments/assets/3fd8b0c3-0057-474e-8bdf-23bf4e982c48)
+
+![Secciones](https://github.com/user-attachments/assets/8eaeb387-81ea-4398-af02-a9ca495be1db)
+
+![Secciones](https://github.com/user-attachments/assets/68a16ee3-1236-4e1f-a01e-229d1d1bfd42)
 
