@@ -248,6 +248,20 @@ h1, h2, h3 {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+.services-grid, .hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .services-grid, .hobby-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+}
+
 
 /* Contact Section */
 .contact {
@@ -433,6 +447,19 @@ footer .social-icons a.linkedin {
     transform: translateY(-10px); 
     box-shadow: 0 6px 15px rgba(170, 211, 23, 0.5); 
 }
+.services-grid, .formations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .services-grid, .formations-grid {
+        grid-template-columns: 1fr; /* Apilar las tarjetas en una sola columna */
+        gap: 20px; /* Espacio entre elementos */
+    }
+}
 
 @media (max-width: 768px) {
     .formation-grid {
@@ -461,5 +488,24 @@ footer .social-icons a.linkedin {
     }
     .menu {
         display: flex;
+    }
+}
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    .navbar.active ul {
+        display: block;
     }
 }
